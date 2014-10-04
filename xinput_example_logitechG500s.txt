@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+xinput list # grab device id, e.g. '9'
+xinput list-props # display current state
+xinput set-prop 9 280 -1 # disables acceleration
+xinput set-prop 9 281 1.3 # adjust to proper speed
